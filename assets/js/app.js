@@ -1,0 +1,4 @@
+!function(){"use strict";function n(n,o){n.otherwise("/"),o.html5Mode({enabled:!1,requireBase:!1}),o.hashPrefix("!")}function o(){FastClick.attach(document.body)}angular.module("georgeApp",["ui.router","ngAnimate","foundation","foundation.dynamicRouting","foundation.dynamicRouting.animations","angular-svg-round-progressbar"]).config(n).run(o),n.$inject=["$urlRouterProvider","$locationProvider"]}();
+!function(){"use strict";function n(){var n=this;n.name="George Elluranggo Jr",n.title="Front End Web/App Engineer"}angular.module("georgeApp").controller("bannerCtrl",[n])}();
+!function(){"use strict";function t(){var t=this;t.skillHtml="10"}var l=angular.module("georgeApp");l.controller("aboutCtrl",[t])}();
+!function(){"use strict"}();
