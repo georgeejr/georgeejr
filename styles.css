@@ -1,0 +1,173 @@
+body.ui.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  width: 100% !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  justify-content: center;
+}
+
+header {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; */
+  z-index: 9999;
+  max-width: 448px;
+  width: 94%;
+  margin: 0 auto -98px auto;
+}
+main {
+  overflow: hidden;
+  position: relative;
+  max-width: 448px;
+  width: 100%;
+  height: 742px;
+  margin: 0 auto;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  max-width: 448px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.ui.button { margin: 0.25em; padding: 0;}
+
+
+#effects {
+  
+    /* flex-basis: 100%; */
+  /* justify-content: center; */
+  display: flex;
+  height: 80px;
+  justify-content: flex-start; 
+  overflow-y: hidden; 
+  overflow-x: auto;
+  margin-top: 5px;
+  width: 95%; 
+}
+#effects .ui.primary.button {
+  border-radius: 50%;
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-size: cover;
+  background-color: #fff;
+  opacity: .8;
+  position: relative;
+}
+#effects .effects-lbl { 
+  font-size: 9px;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  right:0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+#webar {
+  max-width: 448px;
+  width: 100%;
+  height: 742px;
+  border: 1px solid #eee;
+  margin: 0 auto;
+  line-height: 0;
+  text-align: center;
+}
+
+@keyframes blinker {  
+  from { opacity: 1; }
+  to { opacity: 0.3; }
+}
+
+#rec {
+  position: absolute;
+  z-index: 1;
+  top: 1.5rem;
+  left: 1rem;
+  color: red;
+  font-weight: bold;
+  font-family: sans-serif;
+  opacity: 0.8;
+}
+
+#rec > i {
+  animation: blinker 1.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+}
+
+#fps {
+  position: absolute;
+  z-index: 1.5;
+  bottom: 1rem;
+  left: 1rem;
+  color: rgba(255,255,255,0.8); 
+  font-size: 8px;
+  font-family: sans-serif; 
+}
+
+#sound {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  font-size: 20px;
+}
+#sound i {
+  color: #eaeaea;
+  opacity: 0.75;
+
+}
+
+#screenshot {
+  width: 72px;
+  border-radius: 100%;
+  height: 72px;
+  border: 5px solid #fff;
+  background: transparent;
+  text-align: center;
+  padding: 0;
+  opacity: 0.75;
+}
+#screenshot i {
+  font-size: 26px;
+  background-color: #aeaeae;
+  width: 54px;
+  height: 54px;
+  margin: 0 auto !important;
+  border-radius: 100%;
+  vertical-align: middle;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+  main {
+    height: 628px;
+  } 
+} 
+@media screen and (max-width: 320px) {
+  main {
+    height: 536px;
+    max-width: 320px;
+  } 
+} 
